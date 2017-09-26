@@ -16,18 +16,49 @@ img {
 header{
   background-color: yellow;
   border-radius: 20px;
-  display: flex; 
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
+  display: inline-block; 
+  width: 100%;
+  text-align: center;
+  
 }
 
 header img{
-  align-self: center;
+  
   height: auto; 
   width: auto; 
   max-width: 90px; 
   max-height: 90px;
+  float: center;
+  
+}
+
+header h1{
+  padding: 10px 0px 10px 10px;
+  float: left;
+}
+
+header h3{
+  
+  float: right;
+} 
+
+/*header{
+  background-color: yellow;
+  border-radius: 20px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header img{
+  
+  height: auto; 
+  width: auto; 
+  max-width: 90px; 
+  max-height: 90px;
+
 	
 }
 
@@ -39,7 +70,7 @@ header h1{
 header h3{
 	align-self: center;
 	padding-right: 10px;
-}
+} */
 
 footer {
   margin-top: 4em; 
