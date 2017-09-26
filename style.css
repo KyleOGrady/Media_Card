@@ -112,3 +112,15 @@ footer {
     border: 1px solid #021a40;
     border-radius: 50%;
  }
+ header {
+   display: flex; /*-- creates flex container --*/
+   align-items: center; /*-- tells children to align themselves vertically center --*/
+   justify-content: space-between; /*--tells children to distibute space evenly between --*/
+   padding-right: 12px; /*-- balances the padding on the left present by default --*/
+ }
+ .left, .right { /*-- tells both text elements to be the same width --*/
+   width: 33.33333%;
+ }
+ .right {
+   text-align: right; /*-- sets text alighment for right-hand text --*/
+ }
