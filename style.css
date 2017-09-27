@@ -1,141 +1,102 @@
 *, *::after {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
-  width: 85%; 
-  margin: 0 auto;  
-  font-family: 'Raleway', sans-serif;  
+  width: 85%;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
   background-color: #DCDCDC;
 }
 
 img {
-  width: 100%;  
-}
-
-header{
-  background-color: yellow;
-  border-radius: 20px;
-  display: inline-block; 
   width: 100%;
-  text-align: center;
-  
 }
 
-header img{
-  
-  height: auto; 
-  width: auto; 
-  max-width: 90px; 
-  max-height: 90px;
-  float: center;
-  
-}
-
-header h1{
-  padding: 10px 0px 10px 10px;
-  float: left;
-}
-
-header h3{
-  
-  float: right;
-} 
-
-/*header{
+header {
   background-color: yellow;
   border-radius: 20px;
-  display: flex; 
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
+  width: 100%;
 }
 
-header img{
-  
-  height: auto; 
-  width: auto; 
-  max-width: 90px; 
+header img {
+  height: auto;
+  width: auto;
+  max-width: 90px;
   max-height: 90px;
-
-	
 }
 
-header h1{
+header h1 {
   padding: 10px 0px 10px 10px;
-  align-self: center;
 }
 
-header h3{
-	align-self: center;
-	padding-right: 10px;
-} */
+header h3 {
+}
 
 footer {
-  margin-top: 4em; 
-  border: 1px solid #333;  
-  text-align: center; 
+  margin-top: 4em;
+  border: 1px solid #333;
+  text-align: center;
   background-color: yellow;
 }
 
 /*-- DOCUMENT STYLES --*/
 .container {
-  display: flex; 
-  flex-wrap: wrap; 
-  flex-direction: row;  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .cards-item {
-  display: flex;  
-  flex-direction: column;  
-  padding: 2rem .5rem;  
+  display: flex;
+  flex-direction: column;
+  padding: 2rem .5rem;
 }
 
-@media screen and (min-width: 550px) {  
-  .cards-item {width: 50%;} 
+@media screen and (min-width: 550px) {
+  .cards-item {width: 50%;}
 }
 
 @media screen and (min-width: 1024px) {
-  .cards-item {width: 33.33333%;} 
+  .cards-item {width: 33.33333%;}
 }
 
-@media screen and (min-width: 1280px) { 
-  .cards-item {width: 25%;} 
+@media screen and (min-width: 1280px) {
+  .cards-item {width: 25%;}
 }
 
 .card {
   border: 1px solid #dadada;
 }
 
-.card-image { 
-  background-size: cover;  
-  background-position: center center; 
-  padding-bottom: 60%;  
+.card-image {
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 60%;
   filter: blur(5px);
-  transition: filter 0.3s ease-in;  
+  transition: filter 0.3s ease-in;
 }
 
 .card:hover .card-image {
-   
+
     filter: blur(0px);
 }
 
 .card-content {
-  display: flex;  
-  flex: 1 1 auto; 
-  flex-direction: column; 
-  padding: .75rem;  
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: .75rem;
 }
 
 .card-title {
-  margin-bottom: 0;  
-  font-weight: 700;  
+  margin-bottom: 0;
+  font-weight: 700;
 }
 
 .card-btn {
-  font-size: .90rem;  
-  padding: .6rem;  
+  font-size: .90rem;
+  padding: .6rem;
   font-family: 'Raleway';
   margin-left: 40px;
   margin-right: 40px;
@@ -151,4 +112,15 @@ footer {
     border: 1px solid #021a40;
     border-radius: 50%;
  }
-
+ header {
+   display: flex; /*-- creates flex container --*/
+   align-items: center; /*-- tells children to align themselves vertically center --*/
+   justify-content: space-between; /*--tells children to distibute space evenly between --*/
+   padding-right: 12px; /*-- balances the padding on the left present by default --*/
+ }
+ .left, .right { /*-- tells both text elements to be the same width --*/
+   width: 33.33333%;
+ }
+ .right {
+   text-align: right; /*-- sets text alighment for right-hand text --*/
+ }
