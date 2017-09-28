@@ -112,6 +112,7 @@ footer {
     border: 1px solid #021a40;
     border-radius: 50%;
  }
+ 
  header {
    display: flex; /*-- creates flex container --*/
    align-items: center; /*-- tells children to align themselves vertically center --*/
